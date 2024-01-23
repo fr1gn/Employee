@@ -1,12 +1,10 @@
 package xrp;
 
-public class Person implements Payable {
+public class Person implements Payable, Comparable<Person> {
     private int id;
     private static int id_gen;
     private String name;
     private String surname;
-    private String position;
-    Student student = new Student();
 
     public int getId() {
         return id;
@@ -39,11 +37,7 @@ public class Person implements Payable {
     }
 
     public String getPosition() {
-        if(position != null && !position.isEmpty()) {
-            return position;
-        } else {
-            return "Student";
-        }
+        return "Student";
     }
 
     @Override
@@ -53,10 +47,11 @@ public class Person implements Payable {
 
     @Override
     public double getPaymentAmount() {
-        if(student.equals(getPosition())) {
-            return 36600;
-        } else {
-            return 0.0;
-        }
+        return 0.0;
+    }
+
+    @Override
+    public int compareTo(Person o) {
+        return Double.compare(this.getPaymentAmount(), o.getPaymentAmount());
     }
 }

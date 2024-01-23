@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0666694c-a9e5-4980-979a-8839c3c58671" name="Changes" comment="oo">
-      <change afterPath="$PROJECT_DIR$/src/xrp/Payable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/xrp/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/xrp/Employee.java" afterDir="false" />
@@ -82,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705942730826</updated>
       <workItem from="1705942732156" duration="6148000" />
-      <workItem from="1706011000066" duration="2413000" />
+      <workItem from="1706011000066" duration="3487000" />
     </task>
     <task id="LOCAL-00001" summary="oo">
       <option name="closed" value="true" />
@@ -124,11 +123,30 @@
       <option name="project" value="LOCAL" />
       <updated>1705961853115</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="oo">
+      <option name="closed" value="true" />
+      <created>1706013452538</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706013452539</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="oo" />

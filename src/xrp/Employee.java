@@ -1,32 +1,8 @@
 package xrp;
 
-public class Employee implements Payable {
-    private int id;
-    private static int id_gen;
-    private String name;
-    private String surname;
+public class Employee extends Person {
     private String position;
     private double salary;
-
-    public int getId() {
-        return id;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public double getSalary() {
         return salary;
@@ -42,24 +18,23 @@ public class Employee implements Payable {
     public void setPosition(String position) {
         this.position = position;
     }
-    Employee() {
-        id = id_gen++;
+
+    public Employee() {
+        super();
     }
     Employee(String name, String surname, String position, double salary) {
-        this();
-        setName(name);
-        setSurname(surname);
+        super(name, surname);
         setPosition(position);
         setSalary(salary);
     }
 
     @Override
     public String toString() {
-        return "Employee: " + id + ". " + name + " " + surname;
+        return "Employee: " + super.toString();
     }
 
     @Override
     public double getPaymentAmount() {
-        return 0;
+        return salary;
     }
 }

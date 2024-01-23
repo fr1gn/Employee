@@ -1,39 +1,14 @@
 package xrp;
 
-public class Student implements Payable {
-    private int id;
-    private static int id_gen;
-    private String name;
-    private String surname;
+public class Student extends Person {
     private double gpa;
-    Student() {
-        id = id_gen++;
+
+    public Student() {
+        super();
     }
     Student(String name, String surname, double gpa) {
-        this();
-        setName(name);
-        setSurname(surname);
+        super(name, surname);
         setGpa(gpa);
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
     }
 
     public double getGpa() {
@@ -46,7 +21,7 @@ public class Student implements Payable {
 
     @Override
     public String toString() {
-        return "Student: " + id + ". " + name + " " + surname + " " + gpa;
+        return "Student: " + super.toString();
     }
 
     @Override
