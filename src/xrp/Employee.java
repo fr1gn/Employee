@@ -22,7 +22,7 @@ public class Employee extends Person {
     public Employee() {
         super();
     }
-    Employee(String name, String surname, String position, double salary) {
+    public Employee(String name, String surname, String position, double salary) {
         super(name, surname);
         setPosition(position);
         setSalary(salary);
