@@ -17,7 +17,7 @@ public class Main {
         ArrayList<Person> peopleList = new ArrayList<>();
 
         Employee employee1 = new Employee("John", "Lennon", "Manager", 27045.78);
-        Employee employee2 = new Employee("George", "Harrison", "Developer", 50000.00);
+        Employee employee2 = new Employee("Tairlan", "Zhanashev", "Senior Developer", 50000.00);
         Student student1 = new Student("Ringo", "Starr", 2.5);
         Student student2 = new Student("Paul", "McCartney", 3.0);
 
