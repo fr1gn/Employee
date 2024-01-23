@@ -1,6 +1,6 @@
 package xrp;
 
-public class Student {
+public class Student implements Payable {
     private int id;
     private static int id_gen;
     private String name;
@@ -46,12 +46,16 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", gpa=" + gpa +
-                '}';
+        return "Student: " + id + ". " + name + " " + surname + " " + gpa;
+    }
+
+    @Override
+    public double getPaymentAmount() {
+        if(gpa > 2.67) {
+            return 36600.0;
+        } else {
+            return 0.0;
+        }
     }
 }
 

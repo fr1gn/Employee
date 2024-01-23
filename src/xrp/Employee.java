@@ -1,6 +1,6 @@
 package xrp;
 
-public class Employee {
+public class Employee implements Payable {
     private int id;
     private static int id_gen;
     private String name;
@@ -55,12 +55,11 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", position='" + position + '\'' +
-                ", salary=" + salary +
-                '}';
+        return "Employee: " + id + ". " + name + " " + surname;
+    }
+
+    @Override
+    public double getPaymentAmount() {
+        return 0;
     }
 }

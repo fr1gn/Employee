@@ -1,10 +1,12 @@
 package xrp;
 
-public class Person {
+public class Person implements Payable {
     private int id;
     private static int id_gen;
     private String name;
     private String surname;
+    private String position;
+    Student student = new Student();
 
     public int getId() {
         return id;
@@ -36,11 +38,25 @@ public class Person {
         this.surname = surname;
     }
 
+    public String getPosition() {
+        if(position != null && !position.isEmpty()) {
+            return position;
+        } else {
+            return "Student";
+        }
+    }
+
     @Override
     public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                '}';
+        return id + ". " + name + " " + surname;
+    }
+
+    @Override
+    public double getPaymentAmount() {
+        if(student.equals(getPosition())) {
+            return 36600;
+        } else {
+            return 0.0;
+        }
     }
 }
