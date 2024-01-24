@@ -16,10 +16,10 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Person> peopleList = new ArrayList<>();
 
-        Employee employee1 = new Employee("John", "Lennon", "Manager", 27045.78);
+        Employee employee1 = new Employee("Damir", "Beckturov", "Manager", 27045.78);
         Employee employee2 = new Employee("Tairlan", "Zhanashev", "Senior Developer", 50000.00);
-        Student student1 = new Student("Ringo", "Starr", 2.5);
-        Student student2 = new Student("Paul", "McCartney", 3.0);
+        Student student1 = new Student("Nurzhan", "Kaskeev", 2.5);
+        Student student2 = new Student("Zharas", "Satybaldy", 3.0);
 
         peopleList.add(employee1);
         peopleList.add(employee2);
